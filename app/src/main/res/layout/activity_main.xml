@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team A"
+            android:layout_margin="16dp"
+            android:gravity="bottom"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teamA_scoreboard"
+            android:layout_margin="16dp"
+            android:text="0"
+            android:textSize="50dp"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="+3 POINTS"
+            android:id="@+id/teamA_3points"
+            android:layout_margin="8dp"
+            android:onClick="updateScoreby3"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="+2 POINTS"
+            android:id="@+id/teamA_2points"
+            android:layout_margin="8dp"
+            android:onClick="updateScoreby2"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="FREE THROW"
+            android:id="@+id/teamA_FreeThrow"
+            android:layout_margin="8dp"
+            android:onClick="updateScoreby1"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team B"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teamB_scoreboard"
+            android:layout_margin="16dp"
+            android:text="0"
+            android:textSize="50dp"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="+3 POINTS"
+            android:id="@+id/teamB_3points"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:onClick="updateScoreby3B"/>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="+2 POINTS"
+            android:id="@+id/teamB_2points"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:onClick="updateScoreby2B"/>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="FREE THROW"
+            android:id="@+id/teamB_FreeThrow"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:onClick="updateScoreby1B"/>
+    </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="RESET"
+        android:onClick="reset"/>
+</RelativeLayout>
+
+
+
+
+
